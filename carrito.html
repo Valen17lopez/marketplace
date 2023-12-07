@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="js/carrito.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo"> Lili Store</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a class="botonMenu botonVolver" href="./index.html">
+                        <i class="bi bi-arrow-return-left"></i></i>Seguir Comprando
+                    </a></li>
+                    <li><a class="botonMenu botonCarrito active" href="./carrito.html">
+                        <i class="bi bi-cart3"></i>Carrito
+                    </a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="textFooter">© 2023 Valen Linda</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="tituloPrincipal">Carrito</h2>
+            <div class="contenedorCarrito">
+                <p id="carVacio" class="carVacio">Carrito Vacio. <i class="bi bi-emoji-tear"></i></p>
+                
+                <div id="carritoProductos" class="carritoProductos disabled"> 
+                    <!-- Esto se completa con el js -->
+                </div>
+
+                <div id="carAcciones" class="carAcciones disabled">
+                    <div class="carAccionesIzquierda">
+                        <button id="carAccionVaciar" class="carAccionVaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carAccionesDerecha">
+                        <div class="carAccionTotal">
+                            <p>Total:</p>
+                            <p id="total">$90.000</p>
+                        </div>
+                        <button id="carAccioncomprar" class="carAccioncomprar">Comprar Ahora</button>
+                    </div>
+                </div>
+
+                <p id="carComprado" class="carComprado disabled">Muchas Gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html> 
